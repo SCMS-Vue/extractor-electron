@@ -1,8 +1,9 @@
 'use strict'
-import { app, ipcMain, protocol, BrowserWindow, Menu } from "electron";
+import { app, ipcMain, protocol, BrowserWindow, Menu, remote } from "electron";
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer';
 import { php, path } from './phpserver';
+const { autoUpdater } = require("electron-updater");
 
 const menuTemplate = require("./menuTemplate");
 
@@ -29,6 +30,10 @@ async function createWindow() {
 
   win.on("will-resize", (e) => {
     e.preventDefault();
+  });
+
+  win.once("ready-to-show", () => {
+    autoUpdater.checkForUpdatesAndNotify();
   });
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
@@ -68,15 +73,18 @@ app.on('ready', async () => {
   }
   createWindow(); 
 })
-
+ipcMain.on("restart_app", () => {
+  autoUpdater.quitAndInstall();
+});
 ipcMain.on('show-main-window-event', function() {
   main.window.show();
   app.dock.show();
 });
-ipcMain.on("ping", (event, data) => {
+ipcMain.on("ping", (event) => {
   event.sender.send("pong", {
     host: php.host,
-    port: php.port
+    port: php.port,
+    data: remote.app.getVersion(),
   });
 });
 
@@ -96,3 +104,12 @@ if (isDevelopment) {
     })
   }
 }
+
+autoUpdater.on("update-available", () => {
+  win.webContents.send("update_available");
+  alert("update_available");
+});
+autoUpdater.on("update-downloaded", () => {
+  win.webContents.send("update_downloaded");
+  alert("update_downloaded");
+});
