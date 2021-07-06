@@ -1,0 +1,29 @@
+{
+    "name": "adevi/ex-srv",
+    "description": "Php server extractor",
+    "type": "project",
+    "autoload": {
+        "files": [
+            "modules\/helpers\/Help.php"
+            
+        ],
+        "psr-4": {
+            "Helpers\\": "modules\/helpers\/",
+            "App\\": "app\/"
+        }
+        
+    },
+    "require": {
+        "miladrahimi/phprouter": "5.*",
+        "paquettg/php-html-parser": "dev-master"
+    },
+    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sugin Paladin",
+            "email": "34408293+sugin223pl@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

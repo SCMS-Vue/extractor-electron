@@ -1,0 +1,20 @@
+{
+    "categories": {
+        "INFORMATICA": "https://empresite.eleconomista.es/Actividad/INFORMATICA/",
+        "SISTEMAS": "https://empresite.eleconomista.es/Actividad/SISTEMAS/",
+        "MANTENIMIENTO": "https://empresite.eleconomista.es/Actividad/MANTENIMIENTO/",
+        "REPARACION": "https://empresite.eleconomista.es/Actividad/REPARACION/",
+        "PISOS": "https://empresite.eleconomista.es/Actividad/PISOS/",
+        "INMUEBLES": "https://empresite.eleconomista.es/Actividad/INMUEBLES/",
+        "COMPRA-VENTA INMUEBLES": "https://empresite.eleconomista.es/Actividad/COMPRA-VENTA-INMUEBLES/",
+        "CONSTRUCCION": "https://empresite.eleconomista.es/Actividad/CONSTRUCCION/",
+        "INDUSTRIA": "https://empresite.eleconomista.es/Actividad/INDUSTRIA/",
+        "LIMPIEZA": "https://empresite.eleconomista.es/Actividad/LIMPIEZA/",
+        "HOGAR": "https://empresite.eleconomista.es/Actividad/HOGAR/",
+        "ELECTRODOMESTICOS": "https://empresite.eleconomista.es/Actividad/ELECTRODOMESTICOS/",
+        "MOBILIARIO": "https://empresite.eleconomista.es/Actividad/MOBILIARIO/",
+        "PUBLICIDAD": "https://empresite.eleconomista.es/Actividad/PUBLICIDAD/",
+        "TELECOMUNICACIONES": "https://empresite.eleconomista.es/Actividad/TELECOMUNICACIONES/",
+        "INTERNET": "https://empresite.eleconomista.es/Actividad/INTERNET/"
+    }
+}

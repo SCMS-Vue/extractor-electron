@@ -1,0 +1,68 @@
+@import "custom";
+html, body {
+    background-color: #f8f9fa !important;
+}
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 31px; 
+    width: 100%;
+}
+footer {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #f8f9fa !important;
+    position: fixed;
+    bottom: 0;
+    height: 28px;
+    width: 100%;
+}
+main {
+    padding: 50px 0 30px 0;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+.router-link-active {
+    text-decoration: none;
+    pointer-events: none;
+}
+.sticky {
+    top: 0px !important;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1 !important;
+}
+.menutop {
+    a label {
+        cursor: pointer;
+    }
+    .btn {
+        border-radius: unset !important;
+        outline: 0 !important;
+        cursor: pointer;
+    }
+    .router-link-active {
+        //color: rgb(196, 196, 196);
+        opacity: .7;
+    }
+    .btn:focus {
+        outline: 0 !important;
+        box-shadow: unset !important;
+    }
+}
+
+// .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+//     color: #fff;
+//     background-color: #0b2348;
+//     border-color: #0b2850;
+// }

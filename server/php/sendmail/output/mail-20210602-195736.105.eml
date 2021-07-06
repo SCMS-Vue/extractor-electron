@@ -1,0 +1,26 @@
+To: Osclass administrator <admin@admin.com>
+Subject: Osclass successfully installed!
+Date: Wed, 2 Jun 2021 16:57:36 +0000
+From: Osclass <osclass@osclass.test>
+Message-ID: <z0elBstnLQATL7YgxbnHC8jaeV9w7AgdcIPB0U4IwKs@osclass.test>
+X-Mailer: PHPMailer 6.1.8 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1_z0elBstnLQATL7YgxbnHC8jaeV9w7AgdcIPB0U4IwKs"
+Content-Transfer-Encoding: 8bit
+
+This is a multi-part message in MIME format.
+
+--b1_z0elBstnLQATL7YgxbnHC8jaeV9w7AgdcIPB0U4IwKs
+Content-Type: text/plain; charset=us-ascii
+
+Hi HQMotors,<br/><br/>Your Osclass installation at http://osclass.test/osclass/ is up and running. You can access the administration panel with these details:<br/><ul><li>username: admin</li><li>password: Parolamea00</li></ul>Remember that for any doubts you might have you can consult our <a href="https://docs.osclasspoint.com/">documentation</a><br/><br/>--<br/>The <a href="https://osclass-classifieds.com">OsclassPoint</a> team
+
+--b1_z0elBstnLQATL7YgxbnHC8jaeV9w7AgdcIPB0U4IwKs
+Content-Type: text/html; charset=us-ascii
+
+Hi HQMotors,<br/><br/>Your Osclass installation at http://osclass.test/osclass/ is up and running. You can access the administration panel with these details:<br/><ul><li>username: admin</li><li>password: Parolamea00</li></ul>Remember that for any doubts you might have you can consult our <a href="https://docs.osclasspoint.com/">documentation</a><br/><br/>--<br/>The <a href="https://osclass-classifieds.com">OsclassPoint</a> team
+
+
+--b1_z0elBstnLQATL7YgxbnHC8jaeV9w7AgdcIPB0U4IwKs--
+
